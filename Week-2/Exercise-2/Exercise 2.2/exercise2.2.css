@@ -1,0 +1,51 @@
+#main{
+    width: 400px;
+    margin: auto;
+    margin-top: 200px;
+}
+#main>div{
+    display: flex;
+}
+#main>div>div{
+    width: 200px;
+    height:200px;
+}
+.one{
+    background-color: red;
+    transition: all 2s ease;
+    transform-origin: top left;
+}
+.two{
+    background-color:yellow;
+    transition: all 2s ease;
+    transform-origin: top right;
+}
+.three{
+    background-color: blue;
+    transition: all 2s ease;
+    transform-origin: bottom left;
+}
+.four{
+    background-color:green;
+    transition: all 2s ease;
+    transform-origin: bottom right;
+}
+#main:hover .one{
+    transform: rotate(90deg);
+}
+#main:hover .two{
+    transform: rotate(-90deg);
+}
+#main:hover .three{
+    transform: rotate(-90deg);
+}
+#main:hover .four{
+    transform: rotate(90deg);
+}
+#hello{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    margin-left:200px;
+    transition: all 3s ease;
+}
